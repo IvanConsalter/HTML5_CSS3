@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form, input e textarea</title>
+</head>
+<body>
+    <form action="" method="">
+        <!-- Nome -->
+        <label for="name">Nome</label><br>
+        <input type="text" name="name" id="name" placeholder="Nome completo">
+        <br><br>
+        <!-- e-mail -->
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email"  value="user@dominio.com">
+        <br><br>
+        
+        <!-- input tipo radio-box -->
+        <p>Escolha uma fruta</p>
+        <input type="radio" name="frutas" id="frutas" value="banana" checked>Banana
+        <input type="radio" name="frutas" id="frutas" value="apple">Apple
+        <input type="radio" name="frutas" id="frutas" value="orange">Orange
+        <br><br>
+        <!-- input tipo checkbox -->
+        <p>Escolha varias</p>
+        <input type="checkbox" name="frutas" id="frutas" value="banana" checked>Banana
+        <input type="checkbox" name="frutas" id="frutas" value="apple">Apple
+        <input type="checkbox" name="frutas" id="frutas" value="orange">Orange
+        <br><br>
+        <!-- select -->
+        <p>Escolha sua preferida</p>
+        <select name="frutas" id="frutas">
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="orange">Orange</option>
+        </select>
+        <br><br>
+        <!-- textarea -->
+        <p>Deixe um comentário</p>
+        <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+        <br>
+        <!-- input tipo enviar -->
+        <input type="submit" value="Enviar">
+        <!-- <button type="submit">Enviar</button> -->
+    </form>
+</body>
+</html>
