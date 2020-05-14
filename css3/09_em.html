@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabalhando com em</title>
+
+	<style>
+		 /* 
+        em - RELATIVE depends on parent
+        1em = 16px default browser style;
+        1em = base value
+        */
+		.first-example {
+			font-size: 22px;
+		}
+
+		.second-example {
+			font-size: 8px;
+		}
+
+		.relative {
+			font-size: 2em;
+			display: inline;
+		}
+
+		.absolute {
+			font-size: 32px;
+		}
+
+		.font16 {
+			font-size: 16px;
+			display: inline;
+		}
+
+		.font44 {
+			font-size: 44px;
+			display: inline;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="first-example">
+		<h3 class="relative">2em relative 22px = </h3>
+		<h3 class="font44">44px</h3>
+		<h3 class="absolute">32px absolute</h3>
+	</div>
+	<hr>
+	<div class="second-example">
+		<h3 class="relative">2em relative 8px = </h3>
+		<h3 class="font16">16px</h3>
+		<h3 class="absolute">32px absolute</h3>
+	</div>
+</body>
+</html>

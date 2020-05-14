@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabalhando com rem</title>
+
+	<style>
+		 /*
+        rem - relativo depende da raiz 
+        1 rem = 16px estilo padrao do navegador;
+        */
+
+		html {
+			font-size: 32px;
+		}
+
+		div {
+			font-size: 16px;
+		}
+
+		.relative {
+			font-size: 2rem;
+			display: inline;
+		}
+
+		.absolute {
+			font-size: 16px;
+		}
+
+		.font64 {
+			font-size: 64px;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<h3>html = 32px</h3>
+	<div>
+		<h3>inside div = 16px</h3>
+		<h3 class="relative">2rem relative html = </h3>
+		<h3 class="font64">64px</h3>
+		<h3 class="absolute">absolute = 16px</h3>
+	</div>
+</body>
+</html>
