@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculo no CSS</title>
+
+	<style>
+		/*
+        calc ()
+        executar operações matemáticas + - * /
+        misturar e combinar valores
+        */
+
+        * {
+        	margin: 0;
+        }
+
+        .navbar {
+        	background-color: blue;
+        	height: 100px;
+        	color: white;
+        	font-size: 3rem;
+        }
+
+        .banner {
+        	background-color: red;
+        	min-height: calc(100vh - 100px);
+        }
+	</style>
+</head>
+<body>
+	<div class="navbar">this is navbar</div>
+	<div class="banner"></div>
+</body>
+</html>
