@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabalhando com vh e vw</title>
+
+	<style>
+		/*
+        vh - height - percent of the screen
+        vw - width - percent of the screen
+        */
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.banner {
+			width: 50vw;
+			height: 50vh;
+			background-color: red;
+		}
+
+		.header {
+			width: 100vw;
+			height: 100vh;
+			background-color: blue;
+		}
+
+		.inner {
+			width: 50vw;
+			height: 50vh;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="banner"></div>
+	<div class="header"><div class="inner"></div></div>
+
+</body>
+</html>
