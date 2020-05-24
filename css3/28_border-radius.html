@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Border-radius</title>
+
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: #F00;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.fifty {
+			border-radius: 50px;
+		}
+
+		.ten {
+			border-radius: 10px;
+		}
+
+		.ten-percent {
+			border-radius: 10%;
+		}
+
+		.fifty-percent {
+			border-radius: 50%;
+		}
+		
+		.mix {
+			border-top-left-radius: 15px;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 60px;
+			border-bottom-left-radius: 120px;
+		}
+	</style>
+</head>
+<body>
+	<div class="fifty">border fifty px</div>
+	<div class="ten">border ten px</div>
+	<div class="ten-percent">ten percent</div>
+	<div class="fifty-percent">fifty percent</div>
+	<div class="mix">mix</div>
+</body>
+</html>
