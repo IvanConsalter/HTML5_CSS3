@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Background-image</title>
+
+	<style>
+		div {
+			margin: 20px 0;
+			height: 400px;
+			color: red;
+		}
+
+		.big-img {
+			background-image: url(images/big-img.jpeg);
+		}
+
+		.cover-img {
+			background-image: url(images/big-img.jpeg);
+			background-size: cover;
+		}
+
+		.small-img {
+			border: 2px solid red;
+			background-image: url(images/small-img.jpg);
+		}
+
+		.no-repeat {
+			border: 2px solid black;
+			background-image: url(images/small-img.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="big-img">
+		<h1>I'm big image</h1>
+	</div>
+
+	<div class="cover-img">
+		<h1>I'm cover image</h1>
+	</div>
+
+	<div class="small-img">
+		<h1>I'm small image</h1>
+	</div>
+
+	<div class="no-repeat">
+		<h1>I'm no-repeat image</h1>
+	</div>
+</body>
+</html>
