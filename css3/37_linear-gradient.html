@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Linear-gradient</title>
+
+	<style>
+		div {
+			width: 80%;
+			height: 300px;
+			margin: 100px;
+			color: white;
+			text-align: center;
+		}
+
+		.default {
+			background-image: linear-gradient(green, gray);
+		}
+
+		.right {
+			background-image: linear-gradient(to right, green, gray);
+		}
+
+		.bottom {
+			background-image: linear-gradient(to bottom, green, gray);
+		}
+
+		.deg {
+			background-image: linear-gradient(-45deg, green, gray);
+		}
+
+		.multiple {
+			background-image: linear-gradient(45deg, red, orange, yellow, blue, green);
+		}
+
+		.transparency {
+			background-image: linear-gradient(rgba(0, 255, 0, 0.7), rgb(85, 85, 85, 0.5));
+		}
+
+		.repeating {
+			background-image: repeating-linear-gradient(black, green 10%, gray 20%);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="default">
+		<h1>I'm default linear gradient</h1>
+	</div>
+
+	<div class="right">
+		<h1>I'm linear gradient to right</h1>
+	</div>
+
+	<div class="bottom">
+		<h1>I'm to bottom rigth linear gradient</h1>
+	</div>
+
+	<div class="deg">
+		<h1>I'm 45deg linear gradient</h1>
+	</div>
+
+	<div class="multiple">
+		<h1>I'm multiple colors linear gradient</h1>
+	</div>
+
+	<div class="transparency">
+		<h1>I'm transparency linear gradient</h1>
+	</div>
+
+	<div class="repeating">
+		<h1>I'm linear gradient repeating</h1>
+	</div>
+</body>
+</html>
