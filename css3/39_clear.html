@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Float and clear</title>
+
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        div {
+            height: 250px;
+            margin-top: 25px;
+        }
+
+        img {
+            width: 80%;
+            height: 100%;
+        }
+
+        .float-left img {
+            float: left;
+        }
+
+        .float-right {
+            margin-top: 50px;
+        }
+
+        .float-right img {
+            float: right;
+        }
+
+        .float-inherit {
+            height: 250px;
+            float: left;
+        }
+
+        .float-inherit img {
+            float: inherit;
+        }
+
+        .float-none img {
+            float: none;
+            margin-top: 50px;
+        }
+
+        p {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="float-left">
+        <img src="images/small-img.jpg" alt="example image">
+        <p>I'm floating to the left -> All paragraphs with float: left are clear: left</p>
+    </div>
+
+    <div class="float-right">
+        <img src="images/small-img.jpg" alt="example image">
+        <p>I'm floating to the right</p>
+    </div>
+
+    <div>
+        <div class="float-inherit">
+            <img src="images/small-img.jpg" alt="example image">
+            <p>I am inheriting from my father -> All paragraphs with float: left are clear: left</p>
+        </div>
+    </div>
+
+    <div class="float-none"> 
+        <img src="images/small-img.jpg" alt="example image">
+        <p>I'm none float</p>
+    </div>
+</body>
+</html>
