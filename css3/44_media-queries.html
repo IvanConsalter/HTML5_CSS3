@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media-queries</title>
+
+	<style>
+		@media screen and (max-width: 600px) {
+
+            body {
+                background-color: red;
+            }
+
+            .zero-to-six-hundred {
+                background-color: black;
+                color: white;
+                font-size: 1.2em;
+            }
+
+            .more-than-six-hundred {
+                display: none;
+            }
+        }
+
+		@media screen and (min-width: 600px) {
+
+            body {
+                background-color: yellow;
+            }
+
+            .zero-to-six-hundred {
+                display: none;
+            }
+
+            .more-than-six-hundred {
+                background-color: black;
+                color: white;
+                font-size: 2.2em;
+            }
+        }
+	</style>
+</head>
+<body>
+	<div class="zero-to-six-hundred">
+		<h1>Hello I'm on a screen of 0 to 600px</h1>
+	</div>
+
+	<div class="more-than-six-hundred">
+		<h1>Hello I'm on a screen bigger than 600px</h1>
+	</div>
+</body>
+</html>
