@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Z-index</title>
+
+	<style>
+		body {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		div {
+			border: 3px solid black;
+			position: relative;
+			height: 300px;
+		}
+
+		img {
+			width: 300px;
+			position: absolute;
+			left: 75px;
+			top: 80px;
+		}
+
+		.z-index-on {
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>div without z-index</h1>
+		<p>
+			I'm behind the image, Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod similique atque consequuntur, ex fuga ab quos voluptatibus at nobis?
+		</p>
+		<img src="images/small-img.jpg" alt="example image">
+	</div>
+
+	<div>
+		<h1>same div with z-index</h1>
+		<p>
+			I'm in front of the image, Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod similique atque consequuntur, ex fuga ab quos voluptatibus at nobis?
+		</p>
+		<img src="images/small-img.jpg" alt="example image" class="z-index-on">
+	</div>
+</body>
+</html>
