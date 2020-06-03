@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Before and after</title>
+
+	<style>
+		div .before-after::before {
+			content: "Before paragraph,";
+		}
+
+		div .before-after::after {
+			content: "After paragraph";
+		}
+
+		.icons .star::before {
+			content: "✩";
+		}
+
+		.icons .star::after {
+			content: "✩";
+		}
+
+		.icons .tel::before {
+			content: "✆";
+		}
+
+		.icons .tel::after {
+			content: "✆";
+		}
+
+		.icons .moon::before {
+			content: "☽";
+		}
+
+		.icons .moon::after {
+			content: "☾";
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<p class="before-after">
+			<- I'm a paragraph ->, 
+		</p>
+	</div>
+
+	<div class="icons">
+		<p class="star">star</p>
+		<p class="tel">tel</p>
+		<p class="moon">moon</p>
+	</div>
+</body>
+</html>
