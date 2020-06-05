@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Active</title>
+
+	<style>
+		body {
+			background-color: black;
+			margin: 0 auto;
+			width: 60%;	
+		}
+
+		nav {
+			position: fixed;
+			width: 100%;
+			top: 25px;
+			left: 50%;
+		}
+
+		ul li {
+			display: inline;
+			margin-left: 20px;
+		} 
+
+		ul li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: red;
+		}
+
+		ul a:active {
+			color: black;
+			text-decoration: underline;
+			font-size: 20px;
+		}
+
+		section {
+			color: black;
+			height: 600px;
+		}
+
+		div {
+			background-color: white;
+			text-transform: uppercase;
+			height: 600px;
+			margin: 50px 0;
+		}
+	</style>
+		
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#about">about</a></li>
+			<li><a href="#products">products</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+	</nav>
+
+	<section>just space</section>
+	<div id="about">About</div>
+	<div id="products">Products</div>
+	<div id="contact">Contact</div>
+</body>
+</html>
