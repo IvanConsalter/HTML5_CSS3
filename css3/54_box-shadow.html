@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Box-shadow</title>
+
+	<style>
+		body {
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		div {
+			width: 200px;
+			height: 200px;
+			margin-top: 3em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p {
+			padding-top: 15px;
+			text-align: center;
+		}
+
+		.box1 {
+			background-color: red;
+			box-shadow: 15px 15px black;
+		}
+
+		.box2 {
+			background-color: black;
+			box-shadow: -5px -5px red;
+			color: white;
+		}
+
+		.box3 {
+			background-color: darkblue;
+			box-shadow: 15px 15px 15px blue;
+			color: white;
+		}
+
+		.box4 {
+			background-color: lightgray;
+			box-shadow: 10px -10px 10px green;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p>border-box: 15px 15px black;</p>
+	</div>
+	<div class="box2">
+		<p>border-box: -5px -5px red;</p>
+	</div>
+	<div class="box3">
+		<p>border-box: 15px 15px 15px blue;</p>
+	</div>
+	<div class="box4">
+		<p>border-box: 10px -10px 10px green;</p>
+	</div>
+</body>
+</html>
