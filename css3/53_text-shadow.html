@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Text-shadow</title>
+
+	<style>
+		body {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		table {
+			margin: 50px auto;
+			border: 1px solid black;
+		}
+
+		thead th, tbody td {
+			border: 2px solid black;
+			padding: 8px;
+			font-size: 2em;
+		}
+
+		.normal .shadow1 {
+			text-shadow: 2px 2px red;
+			font-weight: bold;
+		}
+		
+		.normal .shadow2 {
+			text-shadow: 5px 5px blue;
+			font-weight: bold;
+		}
+
+		.negative .shadow1 {
+			text-shadow: -2px -2px green;
+			font-weight: bold;
+		}
+
+		.negative .shadow2 {
+			text-shadow: -5px -5px red;
+			font-weight: bold;
+		}
+
+		.blur .shadow1 {
+			text-shadow: 5px 5px 10px blue;
+			font-weight: bold;
+		}
+
+		.blur .shadow2 {
+			text-shadow: 5px 5px 10px black;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="normal">
+		<table>
+			<thead>
+				<tr>
+					<th>example</th>
+					<th>x</th>
+					<th>y</th>
+					<th>color</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="shadow1">text-shadow</td>
+					<td>2px</td>
+					<td>2px</td>
+					<td>red</td>
+				</tr>
+
+				<tr>
+					<td class="shadow2">text-shadow</td>
+					<td>5px</td>
+					<td>5px</td>
+					<td>blue</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="negative">
+		<table>
+			<thead>
+				<tr>
+					<th>example</th>
+					<th>x</th>
+					<th>y</th>
+					<th>color</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="shadow1">text-shadow</td>
+					<td>-2px</td>
+					<td>-2px</td>
+					<td>green</td>
+				</tr>
+
+				<tr>
+					<td class="shadow2">text-shadow</td>
+					<td>-5px</td>
+					<td>-5px</td>
+					<td>red</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="blur">
+		<table>
+			<thead>
+				<tr>
+					<th>example</th>
+					<th>x</th>
+					<th>y</th>
+					<th>blur</th>
+					<th>color</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="shadow1">text-shadow</td>
+					<td>5px</td>
+					<td>5px</td>
+					<td>10px</td>
+					<td>blue</td>
+				</tr>
+
+				<tr>
+					<td class="shadow2">text-shadow</td>
+					<td>5px</td>
+					<td>5px</td>
+					<td>10px</td>
+					<td>black</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
