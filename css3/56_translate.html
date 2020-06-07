@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Translate</title>
+
+	<style>
+		body {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		div {
+			width: 100px;
+			height: 100px;
+			border: 3px solid black;
+		}
+
+		.container {
+			width: 250px;
+			height: 250px;
+		}
+
+		.translateX {
+			background-color: blue;
+			transform: translateX(100px);
+		}
+
+		.translateX-negative {
+			background-color: gray;
+			transform: translateX(-100px);
+		}
+
+		.translateY {
+			background-color: black;
+			color: white;
+			transform: translateY(50px);
+		}
+
+		.translateY-negative {
+			background-color: green;
+			transform: translateY(-10px);
+		}
+
+		.translateXY {
+			background-color: red;
+			transform: translate(50px, 150px);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="translateX">Translate in X -> 100px</div>
+	</div>
+
+	<div class="container">
+		<div class="translateX-negative">Translate in X -> -100px</div>
+	</div>
+
+	<div class="container">
+		<div class="translateY">Translate in Y -> 50px</div>
+	</div>
+
+	<div class="container">
+		<div class="translateY-negative">Translate in Y -> -150px</div>
+	</div>
+
+	<div class="container">
+		<div class="translateXY">Translate in X, Y -> 50px, 150px</div>
+	</div>
+</body>
+</html>
