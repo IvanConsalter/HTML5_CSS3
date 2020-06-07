@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Rotate</title>
+
+	<style>
+		div {
+			width: 200px;
+			height: 100px;
+			margin: 150px auto;
+			text-align: center;
+		}
+
+		.rotate2d {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.rotate2d .rotate60 {
+			transform: rotate(60deg);
+			background-color: lightsalmon;
+		}
+
+		.rotate2d .rotate120 {
+			transform: rotate(120deg);
+			background-color: lightsalmon;
+		}
+
+		.rotate2d .rotate170 {
+			transform: rotate(170deg);
+			background-color: lightsalmon;
+		}
+
+		.rotate3dX {
+			width: 100vw;
+			height: 100vh;
+			color: white;
+		}
+
+		.rotate3dX .rotateX60 {
+			transform: rotateX(60deg);
+			background-color: blue;
+		}
+
+		.rotate3dX .rotateX120 {
+			transform: rotateX(120deg);
+			background-color: blue;
+		}
+
+		.rotate3dX .rotateX170 {
+			transform: rotateX(170deg);
+			background-color: blue;
+		}
+
+		.rotate3dY {
+			width: 100vw;
+			height: 100vh;
+			color: black;
+		}
+
+		.rotate3dY .rotateY60 {
+			transform: rotateY(60deg);
+			background-color: lightgreen;
+		}
+
+		.rotate3dY .rotateY120 {
+			transform: rotateY(120deg);
+			background-color: lightgreen;
+		}
+
+		.rotate3dY .rotateY170 {
+			transform: rotateY(170deg);
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<div class="rotate2d">
+		<div class="rotate60">rotate(60deg)</div>
+		<div class="rotate120">rotate(120deg)</div>
+		<div class="rotate170">rotate(170deg)</div>
+	</div>
+
+	<div class="rotate3dX">
+		<div class="rotateX60">rotateX(60deg)</div>
+		<div class="rotateX120">rotateX(120deg)</div>
+		<div class="rotateX170">rotateX(170deg)</div>
+	</div>
+
+	<div class="rotate3dY">
+		<div class="rotateY60">rotateY(60deg)</div>
+		<div class="rotateY120">rotateY(120deg)</div>
+		<div class="rotateY170">rotateY(170deg)</div>
+	</div>
+</body>
+</html>
