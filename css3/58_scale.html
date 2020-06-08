@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Scale</title>
+
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: royalblue;
+			margin: 50px auto;
+			text-align: center;
+		}
+
+		.scaleX {
+			width: 100vw;
+			height: 100vh;
+			background-color: white;
+		}
+
+		.scaleX .scaleX12:hover {
+			transform: scaleX(1.2);
+			background-color: slateblue;
+		}
+
+		.scaleX .scaleX16:hover {
+			transform: scaleX(1.6);
+			background-color: slateblue;
+		}
+
+		.scaleX .scaleX18:hover {
+			transform: scaleX(1.8);
+			background-color: slateblue;
+		}
+
+		.scaleY {
+			width: 100vw;
+			height: 100vh;
+			background-color: white;
+			padding-top: 25px;
+		}
+
+		.scaleY .scaleY12:hover {
+			transform: scaleY(1.2);
+			background-color: lightsalmon;
+		}
+
+		.scaleY .scaleY16:hover {
+			transform: scaleY(1.6);
+			background-color: lightsalmon;
+		}
+
+		.scaleY .scaleY18:hover {
+			transform: scaleY(1.8);
+			background-color: lightsalmon;
+		}
+
+		.scaleXY {
+			width: 100vw;
+			height: 100vh;
+			background-color: white;
+			padding-top: 25px;
+		}
+
+		.scaleXY .scaleXY12:hover {
+			transform: scale(1.2);
+			background-color: limegreen;
+		}
+
+		.scaleXY .scaleXY16:hover {
+			transform: scale(1.6);
+			background-color: limegreen;
+		}
+
+		.scaleXY .scaleXY18:hover {
+			transform: scale(1.8);
+			background-color: limegreen;
+		}
+	</style>
+</head>
+<body>
+	<div class="scaleX">
+		<div class="scaleX12">div:hover {taransform: scaleX(1.2);}</div>
+		<div class="scaleX16">div:hover {taransform: scaleX(1.6);}</div>
+		<div class="scaleX18">div:hover {taransform: scaleX(1.8);}</div>
+	</div>
+	<div class="scaleY">
+		<div class="scaleY12">div:hover {taransform: scaleY(1.2);}</div>
+		<div class="scaleY16">div:hover {taransform: scaleY(1.6);}</div>
+		<div class="scaleY18">div:hover {taransform: scaleY(1.8);}</div>
+	</div>
+	<div class="scaleXY">
+		<div class="scaleXY12">div:hover {taransform: scaleX(1.2);}</div>
+		<div class="scaleXY16">div:hover {taransform: scaleX(1.6);}</div>
+		<div class="scaleXY18">div:hover {taransform: scaleX(1.8);}</div>
+	</div>
+</body>
+</html>
