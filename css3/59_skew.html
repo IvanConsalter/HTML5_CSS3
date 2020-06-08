@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Skew</title>
+
+	<style>
+		div {
+			width: 200px;
+			height: 100px;
+			margin: 150px auto;
+			text-align: center;
+		}
+
+		.skew2dX {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.skew2dX .skewX60 {
+			transform: skewX(60deg);
+			background-color: orange;
+		}
+
+		.skew2dX .skewX120 {
+			transform: skewX(120deg);
+			background-color: orange;
+		}
+
+		.skew2dX .skewX170 {
+			transform: skewX(170deg);
+			background-color: orange;
+		}
+
+		.skew2dY {
+			width: 100vw;
+			height: 100vh;
+			color: black;
+		}
+
+		.skew2dY .skewY60 {
+			transform: skewY(60deg);
+			background-color: lightseagreen;
+		}
+
+		.skew2dY .skewY120 {
+			transform: skewY(120deg);
+			background-color: lightseagreen;
+		}
+
+		.skew2dY .skewY170 {
+			transform: skewY(170deg);
+			background-color: lightseagreen;
+		}
+
+		.skew3dXY {
+			width: 100vw;
+			height: 100vh;
+			color: black;
+		}
+
+		.skew3dXY .skewXY60 {
+			transform: skew(60deg, 60deg);
+			background-color: lime;
+		}
+
+		.skew3dXY .skewXY120 {
+			transform: skew(120deg, 120deg);
+			background-color: lime;
+		}
+
+		.skew3dXY .skewXY170 {
+			transform: skew(170deg, 170deg);
+			background-color: lime;
+		}
+	</style>
+</head>
+<body>
+	<div class="skew2dX">
+		<div class="skewX60">skewX(60deg)</div>
+		<div class="skewX120">skewX(120deg)</div>
+		<div class="skewX170">skewX(170deg)</div>
+	</div>
+	<div class="skew2dY">
+		<div class="skewY60">skewY(60deg)</div>
+		<div class="skewY120">skewY(120deg)</div>
+		<div class="skewY170">skewY(170deg)</div>
+	</div>
+	<div class="skew3dXY">
+		<div class="skewXY60">skew3dXY(60deg, 60deg)</div>
+		<div class="skewXY120">skew3dXY(120deg, 120deg)</div>
+		<div class="skewXY170">skew3dXY(170deg, 170deg)</div>
+	</div>
+</body>
+</html>
