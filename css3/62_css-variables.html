@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Variables</title>
+	<!-- 
+        Variáveis ​​em CSS devem ser declaradas em um seletor de CSS que define seu escopo. Para um escopo global, você pode usar :rooto bodyseletor ou .
+
+        O nome da variável deve começar com dois traços (-) e faz distinção entre maiúsculas e minúsculas!
+
+        A sintaxe da var()função é a seguinte:
+
+        var(custom-name, value)
+    -->
+
+    <style>
+    	:root {
+    		--bg-red: red;
+    		--bg-blue: blue;
+    		--bg-yellow: yellow;
+    		--border-default: 3px solid black;
+    	}
+
+    	div {
+    		width: 300px;
+    		height: 300px;
+    		margin: 25px auto;
+    	}
+
+    	.div1 {
+    		background-color: var(--bg-red);
+    	}
+
+    	.div2 {
+    		background-color: var(--bg-yellow);
+    		border: var(--border-default);
+    	}
+
+    	.div3 {
+    		background-color: var(--bg-blue);
+    	}
+
+    	.div4 {
+    		border: var(--border-default);
+    	}
+    </style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+</body>
+</html>
