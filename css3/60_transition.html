@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		div {
+			background-color: black;
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+		}
+	
+		.linear {
+			transition: width 2s, height 2s, background-color 4s;
+			transition-timing-function: linear;
+		}
+
+		.linear:hover {
+			width: 250px;
+			height: 250px;
+			background-color: blue;
+		}
+
+		.ease {
+			transition: width 1s, height 1s, background-color 3s;
+			transition-timing-function: ease;
+		}
+
+		.ease:hover {
+			width: 400px;
+			height: 250px;
+			background-color: red;
+		}
+
+		.ease-in {
+			transition: width 2s, height 2s, background-color 2s;
+			transition-timing-function: ease-in;
+		}
+
+		.ease-in:hover {
+			width: 100px;
+			height: 300px;
+			background-color: green;
+		}
+
+		.ease-out {
+			transition: width 2.5s, height 2.5s, background-color 2s;
+			transition-timing-function: ease-out;
+		}
+
+		.ease-out:hover {
+			width: 450px;
+			height: 300px;
+			background-color: orange;
+		}
+
+		.ease-in-out {
+			transition: width 2s, height 2s, background-color2s;
+			transition-timing-function: ease-in-out;
+		}
+
+		.ease-in-out:hover {
+			width: 300px;
+			height: 350px;
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="linear">linear</div>
+	<div class="ease">ease</div>
+	<div class="ease-in">ease-in</div>
+	<div class="ease-out">ease-out</div>
+	<div class="ease-in-out">ease-in-out</div>
+</body>
+</html>
